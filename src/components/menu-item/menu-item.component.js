@@ -13,9 +13,14 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
             />
         <div className="content">
             <h1 className="title">{title.toUpperCase()}</h1>
-            <span className="subtitle">{'SHOP NOW'}</span>
+            <span className="subtitle">SHOP NOW</span>
         </div>
     </div>
 );
 
 export default withRouter(MenuItem);
+
+// Use withRouter HOC to get properties in the <Route /> components
+// - history
+// - location
+// - match

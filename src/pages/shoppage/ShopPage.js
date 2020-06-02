@@ -2,6 +2,8 @@ import React from 'react';
 import collections from '../../localDatas/shop.data';
 import CollectionPreview from '../../components/preview-collection/CollectionPreview';
 
+import './ShopPage.scss';
+
 class ShopPage extends React.Component {
     constructor(props) {
         super(props);

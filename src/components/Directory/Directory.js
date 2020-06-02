@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MenuItem from '../menu-item/menu-item.component';
-import './directory.style.scss';
+import './Directory.scss';
 
 import sections from '../../localDatas/sections.data';
 
@@ -15,7 +15,7 @@ class Directory extends Component {
 
     render() {
         const { sections } = this.state;
-        console.log(sections[1].imageUrl)
+
         return (
             <div className="directory-menu">
                 {

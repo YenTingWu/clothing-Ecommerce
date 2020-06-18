@@ -38,3 +38,5 @@ const mapStateToProps = createStructuredSelector({
 });
 
 export default withRouter(connect(mapStateToProps)(CartDropdown));
+
+// If we don't provide the second parameter to connect(), connect() will automatically pass dispatch as a prop down to the component

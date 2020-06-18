@@ -23,7 +23,6 @@ class App extends React.Component {
 
   unsubscribeFromAuth = null;
 
-
   componentDidMount() {
     const { setCurrentUser } = this.props;
 
@@ -60,6 +59,13 @@ class App extends React.Component {
                   <Redirect to='/'/> : 
                   <SignInSignOutPage />} 
                 />
+          {/* 
+
+          component props can only pass a component if you provide a inline functino to component props, it will create a new element every single render.
+
+          Instead, you can provide a function with render props. It only be called when the location match.
+         
+          */}
         </Switch>
       </div>
     )

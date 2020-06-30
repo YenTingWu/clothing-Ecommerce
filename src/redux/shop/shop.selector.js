@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect';
 
 const selectShop = state => state.shop;
-
+// selectShop is a non-memorized selector, which is also an input selector
 
 export const selectCollections = createSelector(
     [selectShop],

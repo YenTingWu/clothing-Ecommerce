@@ -3,12 +3,13 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 // Link is a component for connecting other pages with path
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+// createStructuredSelector will automatically pass a top-lovel state to the selectors
 
 import './App.css';
 
-import HomePage from './pages/homepage/HomePage';
 import ShopPage from './pages/shoppage/ShopPage';
 import CheckOutPage from './pages/checkoutpage/CheckOutPage';
+import HomePage from './pages/homepage/HomePage';
 
 import SignInSignOutPage from './pages/sign-in-and-sign-out-page/SignInSignOutPage';
 
